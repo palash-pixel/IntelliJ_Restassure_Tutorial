@@ -1,0 +1,8 @@
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <Divide xmlns="http://tempuri.org/">
+            <intA>500</intA>
+            <intB>20</intB>
+        </Divide>
+    </Body>
+</Envelope>
