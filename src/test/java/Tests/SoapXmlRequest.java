@@ -35,7 +35,7 @@ public class SoapXmlRequest {
                 .log().all();
     }
 
-    //@Test(priority = 1)
+    @Test(priority = 1)
     public void ValidateSoapXml_divide() throws IOException {
         File file_divide = new File("./Soap_Request/divide.xml");
         FileInputStream fileInputStream1 = new FileInputStream(file_divide);
@@ -55,7 +55,7 @@ public class SoapXmlRequest {
                 .then().statusCode(200).body("//*:DivideResult.text()",equalTo("25"))
 
                 .log().all();
-
+        System.out.println(">>>>>End of the file");
 
 
     }
