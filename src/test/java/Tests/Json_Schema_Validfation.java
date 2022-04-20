@@ -12,11 +12,11 @@ public class Json_Schema_Validfation {
     @Test
     public void Schema_test() {
 
-        baseURI = "http://localhost:3000";
+        baseURI = "https://reqres.in/";
         given().
-                get("/users")
+                get("/api/users?page=2")
                 .then().
-                assertThat().body(matchesJsonSchemaInClasspath("Schema.json"))
+                assertThat().body(matchesJsonSchemaInClasspath("Json_Schema.json"))
                 .statusCode(200);
 
     }
